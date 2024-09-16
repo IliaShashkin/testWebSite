@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>User Scores</title>
+        <style>
+          table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 50px auto;
+          }
+          th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+        </style>
+      </head>
+<body>
+    <h1 style="text-align: center;">My Website</h1>
+    <table id="scoreTable"></table>
+
+    <script>
+        /*async function loadCSV() {
+            const response = await fetch('Score.csv');
+            const data = await response.text();
+            const rows = data.split('\n');
+
+            const table = document.getElementById('scoreTable');
+            table.innerHTML = '';  // Clear existing table content
+
+            rows.forEach((row, rowIndex) => {
+                const cols = row.split(',');
+
+                if (cols.length > 1) {
+                    const tr = document.createElement('tr');
+
+                    cols.forEach((col, colIndex) => {
+                        const cell = rowIndex === 0 ? document.createElement('th') : document.createElement('td');
+                        cell.textContent = col;
+                        tr.appendChild(cell);
+                    });
+
+                    table.appendChild(tr);
+                }
+            });
+        }
+
+        loadCSV();*/
+    </script>
+</body>
+</html>
